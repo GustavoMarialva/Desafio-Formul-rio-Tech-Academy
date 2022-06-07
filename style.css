@@ -163,13 +163,46 @@ main .container-main img{
     margin-bottom:0px;
 }
 
+/*FORM*/
+
 .desafio {
-    font-size: 100px;
+    font-size: 30px;
     display: flex;
-    justify-content: center;
-    height:400px;
+    justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
-    margin: 100px auto;
+    margin: 50px auto;
     max-width: 980px;
+    padding-bottom: 60px;
+    border: none;
+}
+
+#conheceu {
+    font-size: 20px;
+}
+
+#botao {
+    font-size: 1.5rem;
+    border: 0;
+    background: #0080ed;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    top: 90%;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#botao:hover {
+    cursor: pointer;
+}
+
+.linguagens {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+#linguagens {
+    font-size: 20px;
 }

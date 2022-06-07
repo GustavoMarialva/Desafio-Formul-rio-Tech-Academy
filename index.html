@@ -7,7 +7,7 @@
     <title>StartSe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
 </head>
 <body>
     <header>
@@ -97,7 +97,45 @@
     </section>
     <section id="form">
         <div class="desafio">
-            desafio
+           <form>
+                   <legend>Participe de nossas promoções!</legend>
+                   <div>
+                       <input type="text" name="Nome" id="nome" placeholder="Nome">
+                   </div>
+                   <div>
+                       <input type="email" placeholder="E-mail">
+                   </div>
+                    <div>
+                        <input type="number" placeholder="Telefone">
+                    </div>
+                    <div>
+                        <label for="conheceu" id="conheceu">Como nos conheceu?</label><select name="conheceu" id="conheceu">Como nos conheceu?
+                        <option value="" selected></option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Google">Google</option>
+                        <option value="Linkedin">Linkedin</option>
+                        <option value="Indicacao">Indicação</option>
+                    </select>
+                    </div>
+                   
+                   <legend id="linguagens">Quais linguagens de programação você se interessa?</legend>
+                        <div class="linguagens">
+                            <input type="checkbox" id="linguagens" name="linguagens1" value="Python">
+                            <label for="Python">Python</label>
+                            <input type="checkbox" id="linguagens" name="linguagens2" value="Javascript">
+                            <label for="Javascript">Javascript</label>
+                            <input type="checkbox" id="linguagens" name="linguagens3" value="C#">
+                            <label for="C#">C#</label>
+                            <input type="checkbox" id="linguagens" name="linguagens4" value="Java">
+                            <label for="Java">Java</label>
+                        </div>
+                    <div>
+                        <button type="submit" class="botao" id="botao">Enviar</button>
+                    </div>
+               </fieldset>
+    
+           </form>
         </div>
     </section>
     
