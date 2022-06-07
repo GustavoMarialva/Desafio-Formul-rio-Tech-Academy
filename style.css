@@ -52,7 +52,7 @@ header nav ul a:hover {
 
 header .container img {
     height: 30px;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 /* MAIN */
@@ -178,6 +178,7 @@ main .container-main img{
 
 #conheceu {
     font-size: 20px;
+    padding: 10px;
 }
 
 #botao {
@@ -197,12 +198,41 @@ main .container-main img{
 #botao:hover {
     cursor: pointer;
 }
-
-.linguagens {
-    font-size: 15px;
-    padding-top: 10px;
+.select-style select {
+    padding: 5px 8px;
+    width: 30%;
+    border: 1px solid #0080ed;
+    border-radius: 20px;
+    -webkit-appearance: none;
 }
 
-#linguagens {
+.select-style select:focus {
+    outline: #0080ed;
+}
+.opcaoProgramacao {
+
     font-size: 20px;
+    padding: 10px;
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    max-width: 980px;
+    width: 500px;
+}
+
+.legendProgramacao {
+    font-size: 20px;
+}
+
+
+#tituloLinguagem {
+    font-size: 18px;
+}
+
+input [type='checkbox'] {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
 }

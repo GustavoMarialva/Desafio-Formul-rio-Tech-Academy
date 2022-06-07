@@ -11,7 +11,15 @@
     div h3 {
         margin-left: 50px;
     }
-    form{
+    form {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-top: 30px;
+        text-align: center;
+        flex-direction: column;
+    }
+    #form {
         display: flex;
         align-items: center;
         width: 100%;

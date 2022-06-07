@@ -108,8 +108,9 @@
                     <div>
                         <input type="number" placeholder="Telefone">
                     </div>
-                    <div>
-                        <label for="conheceu" id="conheceu">Como nos conheceu?</label><select name="conheceu" id="conheceu">Como nos conheceu?
+                    <div class="select-style">
+                        <label for="conheceu" id="conheceu">Como nos conheceu?</label>
+                        <select name="conheceu" id="conheceu">Como nos conheceu?
                         <option value="" selected></option>
                         <option value="Facebook">Facebook</option>
                         <option value="Instagram">Instagram</option>
@@ -118,18 +119,24 @@
                         <option value="Indicacao">Indicação</option>
                     </select>
                     </div>
-                   
-                   <legend id="linguagens">Quais linguagens de programação você se interessa?</legend>
-                        <div class="linguagens">
-                            <input type="checkbox" id="linguagens" name="linguagens1" value="Python">
-                            <label for="Python">Python</label>
-                            <input type="checkbox" id="linguagens" name="linguagens2" value="Javascript">
-                            <label for="Javascript">Javascript</label>
-                            <input type="checkbox" id="linguagens" name="linguagens3" value="C#">
-                            <label for="C#">C#</label>
-                            <input type="checkbox" id="linguagens" name="linguagens4" value="Java">
-                            <label for="Java">Java</label>
+                    <div>
+                        <legend class="legendProgramacao">Quais linguagens de programação você se interessa?</legend>
+                        <div class="opcaoProgramacao">
+                            <label for="python" class="chk">Python</label>
+                            <input type="checkbox" name="linguagens" value="python" id="linguagens">
+                            <span></span>
+                            <label for="java" class="chk">Java</label>
+                            <input type="checkbox" name="linguagens" value="java" id="linguagens">
+                            <span></span>
+                            <label for="Javascript" class="chk">Javascript</label>
+                            <input type="checkbox" name="linguagens" value="javascript" id="linguagens">
+                            <span></span>
+                            <label for="c#" class="chk">C#</label>
+                            <input type="checkbox" name="linguagens" value="c#" id="linguagens">
+                            <span></span>
                         </div>
+                    </div>
+                   
                     <div>
                         <button type="submit" class="botao" id="botao">Enviar</button>
                     </div>
