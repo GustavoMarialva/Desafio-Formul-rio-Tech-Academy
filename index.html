@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,44 @@
     <title>StartSe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 </head>
+
 <body>
     <header>
         <div class="container">
             <img src="./images/image.png" alt="logo">
             <div class="menu-section">
                 <div class="container-menu">
-                    <input type="checkbox" id="checkbox-menu">
-                    <label for="checkbox-menu">
+                    <input type="checkbox" id="checkbox-menu" />
+                    <label for="checkbox-menu" class="menu-button-container">
                         <span></span>
                         <span></span>
                         <span></span>
                     </label>
-                </div>
                 <nav>
-                    <ul>
+                    <ul class="menu">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="#">Artigos</a>
+                            <a href="#artigos">Artigos</a>
                         </li>
                         <li>
-                            <a href="#">Contato</a>
+                            <a href="#form">Contato</a>
                         </li>
                     </ul>
                 </nav>
             </div>
+            </div>
         </div>
     </header>
-    <main>
+    <main id="home">
         <div class="container-main">
             <div>
                 <h2><span>Inscreva-se agora</span></h2>
                 <h2>na Newsletter</h2>
-                <h3>Provocando novos começos com um conhecimento transformador 
+                <h3>Provocando novos começos com um conhecimento transformador
                     na velocidade do AGORA!</h3>
                 <form>
                     <input type="text" placeholder="Nome">
@@ -54,33 +56,37 @@
             <img src="./images/register.webp" alt="imagem">
         </div>
     </main>
-    <section class="cards">
-        <div class="card">
-            <div class="image">
-                <img src="./images/unicornio.webp" alt="imagem">
-            </div>
-            <div class="content">
-                <p class="title text--medium">
-                    Com startups mais 'baratas', grandes empresas buscam aquisições
-                </p>
-                <div class="info">
-                    <p class="text--medium">57 Min</p>
+    <section id="artigos" class="cards">
+        <a href="https://www.startse.com/artigos/ferramentas-digitais-sao-chave-na-gestao-financeira-das-startups/">
+            <div class="card">
+                <div class="image">
+                    <img src="./images/comp.webp" alt="imagem">
+                </div>
+                <div class="content">
+                    <p class="title text--medium">
+                        Por que ferramentas digitais são chave na gestão financeira das startups
+                    </p>
+                    <div class="info">
+                        <p class="text--medium">57 Min</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="./images/unicornio.webp" alt="imagem">
-            </div>
-            <div class="content">
-                <p class="title text--medium">
-                    Com startups mais 'baratas', grandes empresas buscam aquisições
-                </p>
-                <div class="info">
-                    <p class="text--medium">57 Min</p>
+        </a>
+        <a href="./artigos/futuro/futuro.html">
+            <div class="card">
+                <div class="image">
+                    <img src="./images/futuro.webp" alt="imagem">
+                </div>
+                <div class="content">
+                    <p class="title text--medium">
+                        Qual o futuro das profissões na Nova Economia?
+                    </p>
+                    <div class="info">
+                        <p class="text--medium">57 Min</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
         <div class="card">
             <div class="image">
                 <img src="./images/unicornio.webp" alt="imagem">
@@ -97,20 +103,20 @@
     </section>
     <section id="form">
         <div class="desafio">
-           <form>
-                   <legend>Participe de nossas promoções!</legend>
-                   <div>
-                       <input type="text" name="Nome" id="nome" placeholder="Nome">
-                   </div>
-                   <div>
-                       <input type="email" placeholder="E-mail">
-                   </div>
-                    <div>
-                        <input type="number" placeholder="Telefone">
-                    </div>
-                    <div class="select-style">
-                        <label for="conheceu" id="conheceu">Como nos conheceu?</label>
-                        <select name="conheceu" id="conheceu">Como nos conheceu?
+            <form>
+                <legend>Participe de nossas promoções!</legend>
+                <div>
+                    <input type="text" name="Nome" id="nome" placeholder="Nome">
+                </div>
+                <div>
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div>
+                    <input type="number" placeholder="Telefone">
+                </div>
+                <div class="select-style">
+                    <label for="conheceu" id="conheceu">Como nos conheceu?</label>
+                    <select name="conheceu" id="conheceu">Como nos conheceu?
                         <option value="" selected></option>
                         <option value="Facebook">Facebook</option>
                         <option value="Instagram">Instagram</option>
@@ -118,37 +124,38 @@
                         <option value="Linkedin">Linkedin</option>
                         <option value="Indicacao">Indicação</option>
                     </select>
+                </div>
+                <div>
+                    <legend class="legendProgramacao">Quais linguagens de programação você se interessa?</legend>
+                    <div class="opcaoProgramacao">
+                        <label for="python" class="chk">Python</label>
+                        <input type="checkbox" name="linguagens" value="python" id="linguagens">
+                        <span></span>
+                        <label for="java" class="chk">Java</label>
+                        <input type="checkbox" name="linguagens" value="java" id="linguagens">
+                        <span></span>
+                        <label for="Javascript" class="chk">Javascript</label>
+                        <input type="checkbox" name="linguagens" value="javascript" id="linguagens">
+                        <span></span>
+                        <label for="c#" class="chk">C#</label>
+                        <input type="checkbox" name="linguagens" value="c#" id="linguagens">
+                        <span></span>
                     </div>
-                    <div>
-                        <legend class="legendProgramacao">Quais linguagens de programação você se interessa?</legend>
-                        <div class="opcaoProgramacao">
-                            <label for="python" class="chk">Python</label>
-                            <input type="checkbox" name="linguagens" value="python" id="linguagens">
-                            <span></span>
-                            <label for="java" class="chk">Java</label>
-                            <input type="checkbox" name="linguagens" value="java" id="linguagens">
-                            <span></span>
-                            <label for="Javascript" class="chk">Javascript</label>
-                            <input type="checkbox" name="linguagens" value="javascript" id="linguagens">
-                            <span></span>
-                            <label for="c#" class="chk">C#</label>
-                            <input type="checkbox" name="linguagens" value="c#" id="linguagens">
-                            <span></span>
-                        </div>
-                    </div>
-                   
-                    <div>
-                        <button type="submit" class="botao" id="botao">Enviar</button>
-                    </div>
-               </fieldset>
-    
-           </form>
-           <div>
-            <img src="./images/programmer.webp" alt="imagem" class="imgprog">
+                </div>
+
+                <div>
+                    <button type="submit" class="botao" id="botao">Enviar</button>
+                </div>
+                </fieldset>
+
+            </form>
+            <div>
+                <img src="./images/programmer.webp" alt="imagem" class="imgprog">
+            </div>
         </div>
-        </div>
-        
+
     </section>
-    
+
 </body>
+
 </html>
